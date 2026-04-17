@@ -1,0 +1,44 @@
+rosbag2_bagfile_information:
+  version: 9
+  storage_identifier: mcap
+  duration:
+    nanoseconds: 6789885190
+  starting_time:
+    nanoseconds_since_epoch: 1776459307663183732
+  message_count: 58
+  topics_with_message_count:
+    - topic_metadata:
+        name: /add_two_ints/_service_event
+        type: example_interfaces/srv/AddTwoInts_Event
+        serialization_format: cdr
+        offered_qos_profiles:
+          - history: unknown
+            depth: 0
+            reliability: reliable
+            durability: transient_local
+            deadline:
+              sec: 9223372036
+              nsec: 854775807
+            lifespan:
+              sec: 9223372036
+              nsec: 854775807
+            liveliness: automatic
+            liveliness_lease_duration:
+              sec: 9223372036
+              nsec: 854775807
+            avoid_ros_namespace_conventions: false
+        type_description_hash: RIHS01_32c1d140259c71e5c355115942bcb31df98b4330e4d906b1b75ccb1c9b3ce6c8
+      message_count: 58
+  compression_format: ""
+  compression_mode: ""
+  relative_file_paths:
+    - srvbag_0.mcap
+  files:
+    - path: srvbag_0.mcap
+      starting_time:
+        nanoseconds_since_epoch: 1776459307663183732
+      duration:
+        nanoseconds: 6789885190
+      message_count: 58
+  custom_data: ~
+  ros_distro: jazzy
