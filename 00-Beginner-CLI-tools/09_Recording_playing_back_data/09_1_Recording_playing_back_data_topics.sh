@@ -39,7 +39,7 @@ sleep 2
 # Create working directory
 ##############################
 
-pathvar=/mnt/ubuntu_data/ROS2/ROS-2-Jazzy-Jalisco-Tutorials/Beginner-CLI-tools/09_Recording_playing_back_data/bag_files
+pathvar=/mnt/ubuntu_data/ROS2/ROS-2-Jazzy-Jalisco-Tutorials/00-Beginner-CLI-tools/09_Recording_playing_back_data/bag_files
 echo "📁 Creating working directory..."
 mkdir -p $pathvar
 sleep 1
