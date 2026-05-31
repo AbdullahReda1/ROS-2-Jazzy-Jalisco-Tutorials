@@ -54,3 +54,5 @@ CATKIN_IGNORE
 01-Beginner-Client-libraries/00-Using-colcon-to-build-packages/ros2_ws/install
 01-Beginner-Client-libraries/00-Using-colcon-to-build-packages/ros2_ws/log
 .vscode
+01-Beginner-Client-libraries/01-Creating-a-workspace/ros2_ws/install
+01-Beginner-Client-libraries/01-Creating-a-workspace/ros2_ws/log
