@@ -56,3 +56,5 @@ CATKIN_IGNORE
 .vscode
 01-Beginner-Client-libraries/01-Creating-a-workspace/ros2_ws/install
 01-Beginner-Client-libraries/01-Creating-a-workspace/ros2_ws/log
+01-Beginner-Client-libraries/02-Creating-a-package/ros2_ws/install
+01-Beginner-Client-libraries/02-Creating-a-package/ros2_ws/log
