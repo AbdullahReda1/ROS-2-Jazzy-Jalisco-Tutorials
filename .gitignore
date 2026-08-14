@@ -1,5 +1,6 @@
 devel/
-logs/
+log/
+install/
 build/
 bin/
 lib/
@@ -51,12 +52,6 @@ qtcreator-*
 CATKIN_IGNORE
 
 # Custom Ignore
-01-Beginner-Client-libraries/00-Using-colcon-to-build-packages/ros2_ws/install
-01-Beginner-Client-libraries/00-Using-colcon-to-build-packages/ros2_ws/log
 .vscode
-01-Beginner-Client-libraries/01-Creating-a-workspace/ros2_ws/install
-01-Beginner-Client-libraries/01-Creating-a-workspace/ros2_ws/log
-01-Beginner-Client-libraries/02-Creating-a-package/ros2_ws/install
-01-Beginner-Client-libraries/02-Creating-a-package/ros2_ws/log
-01-Beginner-Client-libraries/03-Writing-a-simple-publisher-and-subscriber-CPP/ros2_ws/install
-01-Beginner-Client-libraries/03-Writing-a-simple-publisher-and-subscriber-CPP/ros2_ws/log
+01-Beginner-Client-libraries/04-Writing-a-simple-publisher-and-subscriber-PY/ros2_ws/src/py_pubsub/test
+01-Beginner-Client-libraries/04-Writing-a-simple-publisher-and-subscriber-PY/ros2_ws/src/py_pubsub/resource
