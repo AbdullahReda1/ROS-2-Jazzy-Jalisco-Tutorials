@@ -53,5 +53,3 @@ CATKIN_IGNORE
 
 # Custom Ignore
 .vscode
-01-Beginner-Client-libraries/04-Writing-a-simple-publisher-and-subscriber-PY/ros2_ws/src/py_pubsub/test
-01-Beginner-Client-libraries/04-Writing-a-simple-publisher-and-subscriber-PY/ros2_ws/src/py_pubsub/resource

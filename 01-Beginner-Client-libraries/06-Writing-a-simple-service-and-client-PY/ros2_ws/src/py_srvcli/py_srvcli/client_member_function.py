@@ -15,20 +15,22 @@ class MinimalClientAsync(Node):
         self.req = AddTwoInts.Request()
 
     def send_request(self, a, b):
-        self.req.a = sys.argv[1]
-        self.req.b = sys.argv[2]
+        self.req.a = a
+        self.req.b = b
         return self.cli.call_async(self.req)
 
 
 def main():
     rclpy.init()
-    
+
     minimal_client = MinimalClientAsync()
     future = minimal_client.send_request(int(sys.argv[1]), int(sys.argv[2]))
     rclpy.spin_until_future_complete(minimal_client, future)
     response = future.result()
-    minimal_client.get_logger().info('Result of add_two_ints: for %d + %d = %d' % (int(sys.argv[1]), int(sys.argv[2]), response.sum))
-    
+    minimal_client.get_logger().info(
+        'Result of add_two_ints: for %d + %d = %d' %
+        (int(sys.argv[1]), int(sys.argv[2]), response.sum))
+
     minimal_client.destroy_node()
     rclpy.shutdown()
 
