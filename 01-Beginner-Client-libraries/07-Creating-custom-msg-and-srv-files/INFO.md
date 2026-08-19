@@ -1,4 +1,3 @@
-
 # Creating Custom msg and srv Files — Study Notes
 
 ## ROS 2 Jazzy Jalisco | Beginner: Client Libraries
@@ -171,12 +170,10 @@ ros2 pkg create --build-type ament_cmake --license Apache-2.0 cpp_pubsub
 ros2 pkg create --build-type ament_python --license Apache-2.0 py_pubsub
 
 # C++ service/client (lesson 6):
-ros2 pkg create --build-type ament_cmake --license Apache-2.0 cpp_srvcli \
-  --dependencies rclcpp example_interfaces
+ros2 pkg create --build-type ament_cmake --license Apache-2.0 cpp_srvcli --dependencies rclcpp tutorial_interfaces
 
 # Python service/client (lesson 7):
-ros2 pkg create --build-type ament_python --license Apache-2.0 py_srvcli \
-  --dependencies rclpy example_interfaces
+ros2 pkg create --build-type ament_python --license Apache-2.0 py_srvcli --dependencies rclpy tutorial_interfaces
 
 # ─── CREATE THE INTERFACE PACKAGE ────────────────────────────────────────────
 ros2 pkg create --build-type ament_cmake --license Apache-2.0 tutorial_interfaces
