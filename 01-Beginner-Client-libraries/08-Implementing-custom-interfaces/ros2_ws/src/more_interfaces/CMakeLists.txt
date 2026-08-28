@@ -39,7 +39,7 @@ install(TARGETS
   subscribe_contact
   publish_address_book
   subscribe_address_book
-  DESTINATION lib/${PROJECT_NAME})#
+  DESTINATION lib/${PROJECT_NAME})
 
 
 # Generate the C++ typesupport target for this package and link it to the executables
