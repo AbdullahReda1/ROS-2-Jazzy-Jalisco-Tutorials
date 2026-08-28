@@ -7,8 +7,10 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_python REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rclpy REQUIRED)
 
 
 # Generate the message files for this package, then export the dependencies for other packages to use
@@ -37,7 +39,7 @@ install(TARGETS
   subscribe_contact
   publish_address_book
   subscribe_address_book
-  DESTINATION lib/${PROJECT_NAME})
+  DESTINATION lib/${PROJECT_NAME})#
 
 
 # Generate the C++ typesupport target for this package and link it to the executables
@@ -48,6 +50,16 @@ target_link_libraries(subscribe_contact "${cpp_typesupport_target}")
 
 target_link_libraries(publish_address_book "${cpp_typesupport_target}")
 target_link_libraries(subscribe_address_book "${cpp_typesupport_target}")
+
+
+# Generate the Python executables for the publisher and subscriber nodes then install them
+ament_python_install_package(scripts)
+
+install(PROGRAMS
+  scripts/publish_contact.py
+  scripts/subscribe_contact.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 
 # Add testing dependencies and enable testing

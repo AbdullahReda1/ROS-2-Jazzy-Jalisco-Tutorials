@@ -7,12 +7,14 @@
   <maintainer email="abdullah.reda44@gmail.com">abdullah</maintainer>
   <license>Apache-2.0</license>
 
-  <!-- Build tool dependencies of ament_cmake and rosidl_default_generators -->
+  <!-- Build tool dependencies of ament_cmake and rosidl_default_generators and ament_cmake_python -->
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
 
   <!-- Package dependencies -->
   <depend>rclcpp</depend>
+  <depend>rclpy</depend>
 
   <!-- Runtime dependencies -->
   <exec_depend>rosidl_default_runtime</exec_depend>
